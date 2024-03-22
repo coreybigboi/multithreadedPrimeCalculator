@@ -20,7 +20,7 @@ public class PrimeCalculator {
 
     public void PerformPrimeCalculation() {
 
-        System.out.println("Calculating all prime values between " + LOWER_BOUND + " and " + UPPER_BOUND + "\n");
+        System.out.println("Using " + NUM_THREADS + " thread(s) to calculate all prime values between " + LOWER_BOUND + " and " + UPPER_BOUND + "\n");
 
         // create an executor service to manage the threads
         ExecutorService executor = Executors.newFixedThreadPool(NUM_THREADS);
