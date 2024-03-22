@@ -21,6 +21,7 @@ public class PrimeCalculatorWorker implements Runnable {
 
         return true;
     }
+
     @Override
     public void run() {
         List<Integer> localPrimes = new ArrayList<>();
