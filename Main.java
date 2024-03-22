@@ -26,9 +26,15 @@ public class Main {
         System.out.println("\nPlease type in the following parameters separated by spaces: [number-of-threads] [lower-bound] [upper-bound]");
 
         do {
-            threads = scanner.nextInt();
-            lower = scanner.nextInt();
-            upper = scanner.nextInt();
+            try{
+                threads = scanner.nextInt();
+                lower = scanner.nextInt();
+                upper = scanner.nextInt();
+            } catch (Exception e) {
+                threads = -1;
+                lower = -1;
+                upper = -1;
+            }
         } while (!validArguments(threads, lower, upper));
 
         System.out.println();
