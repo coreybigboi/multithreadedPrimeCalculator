@@ -4,7 +4,6 @@ import java.util.List;
 public class PrimeCalculatorWorker implements Runnable {
     private final int LOWER_BOUND;
     private final int UPPER_BOUND;
-
     private final List<Integer> primeList;
 
     public PrimeCalculatorWorker(int LOWER_BOUND, int UPPER_BOUND, List<Integer> primeList) {
